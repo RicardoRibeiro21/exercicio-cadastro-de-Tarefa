@@ -1,0 +1,30 @@
+@{
+    Layout = "MasterPageDeslogado";
+}
+<h1>Formulário de Cadastro de usuário</h1>
+
+
+<form action="/Usuario/Cadastrar" method="POST">
+<label>
+    <p>Nome</p>
+    <input type="text" name="Nome" required="true">
+</label>
+<label>
+    <p>Email</p>
+    <input type="text" name="Email" required="true">
+</label>
+<label>
+    <p>Senha</p>
+    <input type="password" name="Senha" required="true">
+</label>
+<label>
+    <p>Categoria</p>
+    <select name="tipo" required="true">
+        <option value="default">Selecione</option>
+        <option value="Admin">Administrador</option>
+        <option value="Funcionario">Funcionário</option>
+    </select>
+<label>
+  <button type="submit" value="Cadastrar"></button>
+@ViewBag.Mensagem
+</form>

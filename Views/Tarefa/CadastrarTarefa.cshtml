@@ -1,0 +1,21 @@
+@{
+    Layout = "MasterPageLogado";
+}
+<form action="/Tarefa/CadastrarTarefa" method="POST">
+<label>
+    <a>Nome da Tarefa</a>
+    <input type="text" name="Nome" required="true">
+</label>
+<label>
+    <a>Descrição</a>
+    <input type="text" name="Descricao">
+</label>
+<label>
+    <a>Tipo</a>
+    <select name="Tipo" required="True">
+        <option value="Para_Fazer">Para Fazer</option>
+        <option value="Fazendo">Fazendo</option>
+        <option value="Feito">Feito</option>
+    </select>
+</label>
+</form>
